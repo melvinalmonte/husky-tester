@@ -24,7 +24,7 @@
     "lint": "eslint . --ext .ts --ext .tsx",
     "lint:fix": "eslint --fix",
     "prettify": "prettier --write ./src/*",
-    "prepare": "cd .. && husky install client/.husky"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
